@@ -1,0 +1,127 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background:rgb(230, 245, 252);
+    
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    align-items: center;
+}
+.navbar ul{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    font-size: 20px;
+}
+.navbar ul li{
+    display: inline-block;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:#0a0a0a;
+}
+.class{
+    width:10px;
+    height:10px;
+}
+
+.top{
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    width: 150px;
+}
+.right{
+    position: absolute;
+    top: 40px;
+    right: 100px;
+    width: 30px;
+}
+ .content{
+    display: flex;    
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    padding: 50px;
+    flex-direction: row;
+}
+.text{
+    max-width: 600px;
+}
+.text h3{
+    font-size: 70px;
+    color: red;
+    font-style: italic;
+}
+.landing h1{
+    font-size: 80px;
+}
+.text p{
+    font-size: 30px;
+}
+.image img{
+    height: auto;
+    max-width: 100%;
+}
+.text button{
+    margin-top: 20px;
+    padding: 20px 40px;
+    border: 2px solid red;
+    background: white;
+    color: red;
+    font-size: 20px;
+}
+.slider-indicator{
+    position: absolute;
+    left: 30px;
+    top:50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.menu-icon{
+    font-size: 30px;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    cursor: pointer;
+    display: none;
+}
+.menu-icon{
+    font-size: 40px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    display: none;
+}
+.navbar.show{
+    display: block;
+}
+@media(max-width:1200px){
+    .menu-icon{
+        display: block;
+    }
+    .navbar{
+        display: none;
+        position: absolute;
+        top: 40px;
+        right: 70px;
+        background: white;
+        padding: 20px;
+        width: 200px;
+        z-index: 1000;
+    }
+    .navbar ul{
+        flex-direction: column;
+        align-items: end;
+    }
+    .content{
+        flex-direction: row;
+    }
+}
